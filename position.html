@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* body{
+            margin: 0;
+            padding: 0;
+        } */
+        .container{
+            height: 1000px;
+            position: relative;
+            margin: 1000px 20px ;
+        }
+        .fixed{
+            background-color: black;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            color: white;
+            top: 0px;
+            left: 0;
+            z-index: 1000;
+        }
+        .static{
+            position: static; /* Default */
+            background-color: aquamarine;
+            padding: 20px;
+            margin-bottom: 20px;
+
+        }
+        .relative{
+            position: relative;
+            padding: 20px;
+            background-color: bisque;
+            top: 90px;
+        }
+        .absolute{
+            position: absolute;
+            padding: 20px;
+            background-color: rgb(200, 200, 230);
+            top: 60px;
+            left: 90px;
+
+        }
+        .sticky{
+            position: sticky;
+            padding: 20px;
+            background-color: rgb(246, 180, 180);
+            top: 60px;
+            bottom: 60px;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            background-color: black;
+            color: white;
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed">
+        <h3 >Fixed Position</h3>
+    </header>
+    <div class="container">
+        <div class="static">Static Position</div>
+        <div class="relative">Relative Position</div>
+        <div class="absolute">Absolute Position</div>
+        <div class="sticky">Sticky Position</div>
+    </div>
+    <footer>
+        <p>Lorem ipsum dolor sit.</p>
+    </footer>
+</body>
+</html>
