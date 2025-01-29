@@ -1,0 +1,53 @@
+/* External CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&family=Yuji+Mai&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+}
+header{
+    background-color: rgb(101, 101, 250);
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+header:hover{
+    background-color: blueviolet;
+    transition: background-color 2s;
+}
+nav{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(225, 225, 242);;
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(101, 101, 250);;
+}
+section{
+    margin: 1.5rem;
+    display: flex;
+}
+article{
+    flex: 2;
+    background-color: rgb(237, 237, 238);
+    margin-right: 1rem;
+    padding: 15px;
+}
+aside{
+    flex: 1;
+    background-color: rgb(214, 214, 250);
+    padding: 15px;
+}
+.iframe{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+iframe{
+    border-radius: 20px;
+}
