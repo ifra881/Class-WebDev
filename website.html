@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Curriculum Demo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&family=Jaro:opsz@6..72&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,400;0,700;1,400&family=Yuji+Mai&display=swap');
+        body {
+font-family: "Roboto Condensed", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #0073e6;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            margin: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        article, aside {
+            background: white;
+            padding: 15px;
+            border: 1px solid #827c7c;
+            border-radius: 5px;
+        }
+        article {
+            flex: 3;
+        }
+        aside {
+            flex: 2;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            margin-top: 15px;
+            padding: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: none;
+        }
+        li{
+            list-style-type: lower-alpha;
+        }
+       label input[type="radio"]{
+            width: auto;
+            margin-right: 20px;
+        }
+        fieldset{
+            border: none;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Curriculum Demo</h1>
+        <p>Learning HTML, step by step</p>
+    </header>
+
+    <nav>
+        <a href="#text-formatting">Text</a>
+        <a href="#multimedia">Media</a>
+        <a href="#tables">Tables</a>
+        <a href="#lists">Lists</a>
+        <a href="#forms">Forms</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2 id="text-formatting">Text Formatting</h2>
+            <p><b>Bold text</b>, <i>italic text</i>, <u>underlined text</u>.</p>
+            <p>Here’s a horizontal line:</p>
+            <hr>
+
+            <h2 id="multimedia">Multimedia</h2>
+            <p>Embedded audio and video:</p>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+            <video controls  width="100%" poster="pexels-olly-3775553.jpg">
+                <source src="video.mp4" type="video/mp4" >
+                Your browser does not support video.
+            </video>
+<hr>
+            <h2 id="tables">Tables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>25</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>Sarah</td>
+                        <td>30</td>
+                        <td>London</td>
+                    </tr>
+                </tbody>
+            </table>
+<hr>
+            <h2 id="lists">Lists</h2>
+            <p>Here’s an ordered and nested unordered list:</p>
+            <ol>
+                <li>HTML Basics</li>
+                <li>CSS Basics</li>
+                <li>JavaScript Basics</li>
+            </ol>
+            <ul>
+                <li>Frontend
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </li>
+                <li>Backend
+                    <ul>
+                        <li>Node.js</li>
+                        <li>PHP</li>
+                    </ul>
+                </li>
+            </ul>
+<hr>
+            <h2 id="forms">Forms</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label for="male"><input type="radio" name="male" value="male">Male</label>
+                    <label for="female"><input type="radio" name="female" value="female">FeMale</label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="in">India</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </article>
+
+        <aside>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#text-formatting">Text Formatting</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#forms">Forms</a></li>
+            </ul>
+            <hr>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Curriculum Demo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+<!-- git remote add origin https://github.com/ifra881/gggg.git
+git branch -M main
+git push -u origin main -->
